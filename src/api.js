@@ -1,10 +1,6 @@
 import axios from "axios";
 
-const BASE_URL =
-  import.meta.env.VITE_API_URL ||
-  (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
-    ? "http://localhost:8000"
-    : window.location.origin);
+const BASE_URL = "https://build-a-game-session-tracker-app-where.onrender.com";
 
 const api = axios.create({
   baseURL: `${BASE_URL}/api/v1`,
